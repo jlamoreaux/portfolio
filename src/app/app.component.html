@@ -1,14 +1,23 @@
-<header>
-  <h1>
-    <a routerLink="/">{{title}}</a>
-  </h1>
-  <h2>
-    {{subTitle}}
-  </h2>
-</header>
-<nav>
-    <a class="navLink" routerLink="/about">About</a>
-    <a class="navLink" routerLink="/projects">Projects</a>
-    <a class="navLink" routerLink="/contact">Contact</a>
-</nav>
-<router-outlet></router-outlet>
+<div id="background">
+  <header>
+    <h1>
+      <a routerLink="/">{{title}}</a>
+    </h1>
+    <h2>
+      {{subTitle}}
+    </h2>
+  </header>
+  <nav>
+    <div id="menuButton">
+      <div class="menuLine"></div>
+      <div class="menuLine"></div>
+      <div class="menuLine"></div>
+    </div>
+    <div id="navigation">
+      <a class="navLink" routerLink="/about">About</a>
+      <a class="navLink" routerLink="/projects">Projects</a>
+      <a class="navLink" routerLink="/contact">Contact</a>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
