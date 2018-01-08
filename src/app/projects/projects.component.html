@@ -1,5 +1,11 @@
-<ul class="projects">
-  <li *ngFor="let project of projects">
-    <span class="description">{{project}}</span>
-  </li>
-</ul>
+<div id="container">
+  <h3>Check out my most recent work:</h3>
+  <ul class="projects">
+    <li *ngFor="let project of projects" id={{project.id}}>
+      <a href={{project.url}}><img src={{project.img}} alt={{project.name}}></a><br>
+      <a class="title" href={{project.url}}>{{project.name}}</a><br>
+      <a class="github" href={{project.github}}>View on GitHub</a><br>
+      <span class="description">{{project.description}}</span><br>
+    </li>
+  </ul>
+</div>

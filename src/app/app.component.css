@@ -12,13 +12,26 @@ h2 {
   font-size: 14px;
 }
 
+h3 {
+  font-family: sans-serif, arial;
+}
+
 a {
   color: black;
   text-decoration: none;
+  font-family: sans-serif, arial;
 }
 
 a.visited {
   color: black;
+}
+
+p {
+  font-family: sans-serif, arial;
+}
+
+li {
+  font-family: sans-serif, arial;
 }
 
 .navLink {

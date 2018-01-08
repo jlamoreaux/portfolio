@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PROJECTS} from '../projects/projects-list';
 
 @Component({
   selector: 'app-projects',
@@ -6,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects = [
-    'Sports Catalog',
-    'Neighborhood Map',
-    'Log Analysis'
-  ];
+  projects = PROJECTS;
+
   constructor() { }
 
   ngOnInit() {
