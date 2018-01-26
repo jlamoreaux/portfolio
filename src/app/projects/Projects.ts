@@ -3,6 +3,6 @@ export class Project {
   name: string;
   url: string;
   description: string;
-  image: string;
+  img: string;
   github: string;
 }
